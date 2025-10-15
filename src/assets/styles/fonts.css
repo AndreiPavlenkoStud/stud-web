@@ -21,3 +21,19 @@
          url("/static/fonts/Inter-Regular.woff2") format("woff");
     font-weight: 400;
 }
+
+@font-face {
+    font-family: "Poly";
+    src: local('Poly'), local('Poly-Regular'), local('Poly Regular'),
+    url("/static/fonts/Poly-Regular.ttf") format("truetype"),
+    url("/static/fonts/Poly-Regular.woff2") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poly";
+    src: local('Poly'), local('Poly-Italic'), local('Poly Italic'),
+    url("/static/fonts/Poly-Italic.ttf") format("truetype"),
+    url("/static/fonts/Poly-Italic.woff2") format("woff");
+    font-weight: 400;
+}

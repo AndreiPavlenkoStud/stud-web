@@ -1,9 +1,9 @@
 .bold {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif, Poly;
     font-weight: 700;
 }
 
 .medium {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif, Poly;
     font-weight: 500;
 }
