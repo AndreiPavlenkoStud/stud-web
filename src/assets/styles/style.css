@@ -51,6 +51,10 @@
     opacity: 0.4;
 }
 
+.form-label {
+    color: #539698;
+}
+
 /* кнопка отправки */
 .submit-btn {
     background: linear-gradient(90deg, #5A98D0 0%, #A067E9 100%);
@@ -68,11 +72,13 @@
 
 /* форма контакты */
 .contact-form {
-    background-image: url('../img/form-bg.png');
-    background-size: cover;
-    background-position: center;
+    background-image:  url('/stud-web/src/assets/img/form-bg.png');
+    background-size: 400px;
+    background-position: left;
+    background-repeat: no-repeat;
     padding: 30px;
     border-radius: 10px;
+    margin: 20px 0;
 }
 
 /* хлебные крошки */
