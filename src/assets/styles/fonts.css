@@ -23,17 +23,33 @@
 }
 
 @font-face {
-    font-family: "Poly";
-    src: local('Poly'), local('Poly-Regular'), local('Poly Regular'),
-    url("/static/fonts/Poly-Regular.ttf") format("truetype"),
-    url("/static/fonts/Poly-Regular.woff2") format("woff");
+    font-family: "Inter";
+    src: local('Inter'), local('Inter-Regular'), local('Inter Regular'),
+         url("/static/fonts/Inter-Regular.ttf") format("truetype"),
+         url("/static/fonts/Inter-Regular.woff2") format("woff");
     font-weight: 400;
 }
 
 @font-face {
-    font-family: "Poly";
-    src: local('Poly'), local('Poly-Italic'), local('Poly Italic'),
-    url("/static/fonts/Poly-Italic.ttf") format("truetype"),
-    url("/static/fonts/Poly-Italic.woff2") format("woff");
+    font-family: "SFProText";
+    src: local('SFProText'), local('SFProText-Medium'), local('SFProText Medium'),
+         url("/static/fonts/SFProText-Medium.ttf") format("truetype");
+         /*url("/static/fonts/Inter-Regular.woff2") format("woff");*/
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "SFProText";
+    src: local('SFProText'), local('SFProText-Regular'), local('SFProText Regular'),
+         url("/static/fonts/SFProText-Regular.ttf") format("truetype");
+         /*url("/static/fonts/Inter-Regular.woff2") format("woff");*/
     font-weight: 400;
+}
+
+@font-face {
+    font-family: "SFProText";
+    src: local('SFProText'), local('SFProText-Semibold'), local('SFProText Semibold'),
+         url("/static/fonts/SFProText-Semibold.ttf") format("truetype");
+         /*url("/static/fonts/Inter-Regular.woff2") format("woff");*/
+    font-weight: 600;
 }
