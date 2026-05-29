@@ -1,10 +1,26 @@
 <?php
-$a = rand(1, 10);
-function power($val, $pow): float|int
-{
-    if ($pow == 0) return 1;
-    if ($pow < 0) return 1 / power($val, -$pow);
-    return $val * power($val, $pow - 1);
+$regions = [
+        "Московская область" => ["Москва", "Зеленоград", "Клин"],
+        "Ленинградская область" => ["Санкт-Петербург", "Всеволожск", "Павловск", "Кронштадт"],
+        "Рязанская область" => ["Рязань", "Касимов", "Скопин", "Сасово"],
+        "Тюменская область" => ["Тюмень", "Ишим", "Тобольск", "Ялуторовск", "Заводоуковск"]
+];
+
+function searchRegionK($regions){
+    $result = "";
+    foreach ($regions as $region => $cities) {
+        $filteredCities = [];
+        foreach ($cities as $city) {
+            if (mb_substr($city, 0, 1, "UTF-8") === "К") {
+                $filteredCities[] = $city;
+            }
+        }
+        if (!empty($filteredCities)) {
+            $result .= "<strong>{$region}:</strong><br>";
+            $result .= implode(", ", $filteredCities) . ".<br><br>";
+        }
+    }
+    return $result;
 }
 ?>
 
@@ -17,9 +33,7 @@ function power($val, $pow): float|int
 </head>
 <body>
 <h1>Task 6</h1>
-<p><?=$a ?> в степени 10 = <?= power($a, 10) ?></p>
-<p><?=$a ?> в степени -5 = <?= power($a, -5) ?></p>
-<p><?=$a ?> в степени 0 = <?= power($a, 0) ?></p>
+<p><?= searchRegionK($regions) ?></p>
 <a href="index.php">В меню</a>
 </body>
 </html>
